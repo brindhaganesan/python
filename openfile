@@ -1,0 +1,17 @@
+#import the reader() command from the csv module
+from csv import reader
+
+#open the file
+opened_file = open('AppleStore.csv')
+
+#read the file
+read_file = reader(opened_file)
+
+#transform the read-in file to a list of lists
+apps_data = list(read_file)
+
+#print its length
+len(apps_data)
+
+print(apps_data[:1])
+print(apps_data[2:4])
